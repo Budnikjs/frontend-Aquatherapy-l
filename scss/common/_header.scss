@@ -1,0 +1,25 @@
+
+.header{
+    width: 100%;
+    margin-top: 30px;
+    @include div-row-column(row);
+    .nav{
+        display: block;
+        width: 100px;        
+        .nav-list{
+            @include div-row-column(row);
+            column-gap: 3.5%;
+            justify-content: center;
+            transition: all 0.3s ease;
+            .nav__item{
+                margin: 4px;
+                &:hover{
+                    transition: all 0.3s ease;
+                    color: #e6f8ff;
+                    background-color: red;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

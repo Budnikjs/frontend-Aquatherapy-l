@@ -1,0 +1,7 @@
+@mixin div-row-column($direction){
+    flex-direction: $direction;
+    @extend %center-spacebetween;
+}
+
+
+

@@ -1,0 +1,27 @@
+//var
+$main-col:#018ABE;
+$text-col:#ffffff;
+$bg-col: #162831;
+$activ-btn-col:#00b7ff;
+$activ-text: #e6f8ff;
+$link-col: #a5e5ff;
+
+.link-aka-button{
+    @extend %center-center;        
+    width: 155px;
+    height: 36px;
+    background-color: $main-col;
+    color: $text-col;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+}
+.link-aka-button:hover{
+    transform: scale(1.05);
+    background-color: $activ-btn-col;
+}
+.link-aka-button:active{
+    transform: scale(1);
+}
+

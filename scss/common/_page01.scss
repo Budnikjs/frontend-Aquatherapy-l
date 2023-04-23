@@ -1,0 +1,61 @@
+.section{
+    width: 100%;
+    .banner{
+        content: '';
+        height: 600px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: inherit;
+        background-image: url("./../../img/unsplash-landing-head.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+        .banner__subtitle, .banner__title{
+            position: relative;
+            display: block;
+            font-family: 'El Messiri';
+            font-style: normal;
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        .banner__subtitle{
+            position: absolute;
+            top: 140px;
+            font-size: 24px;
+        }
+        .banner__title{
+            position: relative;
+            width: 440px;
+            font-size: 64px;
+        }
+        .banner__subtitle::before, 
+        .banner__subtitle::after
+        {
+            content: '';
+            display: inline-block;
+            position: relative;
+            width: 28px;
+            height: 14px;
+        }
+        .banner__subtitle::before{
+            background-image: url('./../../img/rectangle-left.svg');
+            left: -66px;
+        } 
+        .banner__subtitle::after{
+            right: -66px;
+            background-image: url('./../../img/rectangle-right.svg');
+        }        
+    }
+    .seanses{
+        @include div-row-column(column);
+        .seanses__title{
+            font-weight: 700;
+            font-size: 42px;
+        }
+    }
+}
